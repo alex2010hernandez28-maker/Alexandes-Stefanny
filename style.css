@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&display=swap');
+
+:root {
+  --pink: #f6a9c5;
+  --dark-pink: #d96d98;
+  --light-pink: #fff0f5;
+  --cream: #fffaf8;
+  --text: #684b58;
+  --white: #ffffff;
+  --shadow: 0 12px 35px rgba(190, 105, 140, 0.13);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: 3px solid #b84f7c;
+  outline-offset: 3px;
+}
+
+/* Pantalla de acceso */
+.login-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 15% 20%, #ffe0eb 0, transparent 30%),
+    radial-gradient(circle at 85% 80%, #f9d3e2 0, transparent 32%),
+    #fff7fa;
+}
+
+.login-card {
+  width: min(100%, 420px);
+  padding: 42px 30px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--shadow);
+  text-align: center;
+  border: 1px solid #f9dce7;
+}
+
+.heart {
+  color: var(--dark-pink);
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.login-card h1,
+.top h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+}
+
+.login-card h1 {
+  font-size: 30px;
+  color: var(--dark-pink);
+  margin: 12px 0;
+}
+
+.login-card h1 span,
+.top h1 span {
+  color: #ef9ab9;
+}
+
+.login-card p {
+  margin-bottom: 20px;
+}
+
+.login-card label {
+  display: block;
+  text-align: left;
+  font-weight: 800;
+  margin-bottom: 7px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #efc6d7;
+  border-radius: 14px;
+  background: #fffafd;
+  color: var(--text);
+  margin-bottom: 14px;
+}
+
+.login-card button,
+.card button,
+.primary-link {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 30px;
+  background: var(--dark-pink);
+  color: white;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.login-card button {
+  width: 100%;
+}
+
+.login-card button:hover,
+.card button:hover,
+.primary-link:hover {
+  background: #c95d88;
+  transform: translateY(-2px);
+}
+
+.login-card small {
+  display: block;
+  margin-top: 18px;
+  color: #a78a97;
+}
+
+.error {
+  color: #c03962;
+  font-weight: 800;
+  margin: 10px 0 0 !important;
+  min-height: 24px;
+}
+
+/* Encabezado */
+.top {
+  padding: 42px 20px 30px;
+  text-align: center;
+  background: #fff0f5;
+}
+
+.eyebrow {
+  color: var(--dark-pink);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.top h1 {
+  font-size: clamp(32px, 6vw, 52px);
+  color: #b95d83;
+  margin: 8px 0;
+}
+
+.top > p:last-child {
+  color: #92717f;
+}
+
+/* Portada */
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 55px max(7%, 25px);
+  background: linear-gradient(120deg, #ffe5ee, #fff6f8);
+}
+
+.hero-text {
+  max-width: 560px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  color: #a94f76;
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.hero-text > p:not(.eyebrow) {
+  margin-bottom: 25px;
+  max-width: 500px;
+}
+
+.hero-image {
+  width: min(38%, 330px);
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-height: 290px;
+  object-fit: contain;
+}
+
+.decor {
+  position: absolute;
+  color: rgba(217, 109, 152, 0.25);
+  font-size: 70px;
+}
+
+.decor-one {
+  top: 20px;
+  right: 20px;
+}
+
+.decor-two {
+  bottom: 10px;
+  left: 25px;
+}
+
+/* Navegación */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px;
+  background: white;
+  box-shadow: 0 4px 18px rgba(190, 105, 140, 0.08);
+}
+
+.menu a {
+  color: #a65378;
+  text-decoration: none;
+  font-weight: 800;
+  padding: 9px 14px;
+  border-radius: 20px;
+  background: #fff0f5;
+}
+
+.menu a:hover {
+  background: #f9d6e4;
+}
+
+/* Secciones y tarjetas */
+.section {
+  padding: 65px 22px;
+  text-align: center;
+  scroll-margin-top: 20px;
+}
+
+.section h2 {
+  color: #a94f76;
+  font-size: clamp(27px, 4vw, 36px);
+  margin: 6px 0 25px;
+}
+
+.section-description {
+  margin: -12px 0 25px;
+}
+
+.card {
+  width: min(100%, 680px);
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border: 1px solid #f8e0e9;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.card h3 {
+  color: #a65378;
+  margin-bottom: 12px;
+  font-size: 23px;
+}
+
+.card button {
+  margin: 8px 5px;
+}
+
+.letter-icon,
+.gift,
+.music-icon {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+#carta {
+  margin: 15px 0 20px;
+  min-height: 48px;
+}
+
+/* Galería */
+.gallery {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 5px solid white;
+  box-shadow: var(--shadow);
+  background: #fbe5ed;
+  transition: transform 0.25s;
+}
+
+.gallery img:hover {
+  transform: scale(1.035);
+}
+
+/* Contador */
+.counter-card {
+  background: linear-gradient(135deg, #fff0f5, #ffffff);
+}
+
+.counter {
+  color: #bd5d86;
+  font-size: clamp(24px, 5vw, 38px);
+  font-weight: 800;
+  margin-top: 12px;
+}
+
+/* Juego y sorpresa */
+.button-group {
+  margin-top: 15px;
+}
+
+.result {
+  color: #ad527b;
+  font-weight: 800;
+  margin-top: 15px;
+  min-height: 25px;
+}
+
+/* Música */
+.music-card audio {
+  display: block;
+  width: min(100%, 420px);
+  margin: 20px auto;
+}
+
+.music-card small {
+  color: #9b8290;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  color: #956d80;
+  background: #ffeaf1;
+}
+
+footer p + p {
+  margin-top: 5px;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 45px 22px;
+  }
+
+  .hero-image {
+    width: min(75%, 280px);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .gallery img {
+    height: 170px;
+  }
+
+  .section {
+    padding: 48px 16px;
+  }
+
+  .card {
+    padding: 24px 18px;
+  }
+}
+
+@media (max-width: 380px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: 220px;
+  }
+
+  .login-card {
+    padding: 32px 20px;
+  }
+}
+/* Animación de apertura de cartita */
+.letter-card {
+  perspective: 1000px;
+}
+
+.letter-icon {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+.letter-card.opened .letter-icon {
+  animation: cartaAbierta 0.8s ease;
+}
+
+#carta {
+  padding: 0 12px;
+  opacity: 0;
+  transform: translateY(12px) scale(0.97);
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease,
+    max-height 0.6s ease,
+    padding 0.6s ease;
+}
+
+.letter-card.opened #carta {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  max-height: 250px;
+  padding: 18px 12px;
+  background: #fff1f6;
+  border-radius: 16px;
+  box-shadow: inset 0 0 12px rgba(217, 109, 152, 0.08);
+}
+
+@keyframes cartaAbierta {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  40% {
+    transform: rotate(-12deg) scale(1.2);
+  }
+  70% {
+    transform: rotate(8deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}

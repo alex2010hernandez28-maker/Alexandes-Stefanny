@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexander y Helen ❤️</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Acceso -->
+  <section id="login" class="login-screen">
+    <div class="login-card">
+      <div class="heart">♡</div>
+      <h1>Alexander <span> & </span> Helen</h1>
+      <p>Bienvenida a nuestro pequeño mundo.</p>
+      <label for="password">Nuestra contraseña</label>
+      <input id="password" type="password" placeholder="Escribe la contraseña">
+      <button id="loginButton">Entrar 💗</button>
+      <p id="error" class="error" role="alert"></p>
+      <small>Un lugar lleno de recuerdos especiales.</small>
+    </div>
+  </section>
+
+  <!-- Página principal -->
+  <main id="contenido" hidden>
+    <header class="top">
+      <p class="eyebrow">UN MUNDO HECHO PARA NOSOTROS</p>
+      <h1>Alexander <span>♡</span> Helen</h1>
+      <p>Nuestra pequeña historia</p>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">PARA ALGUIEN ESPECIAL</p>
+        <h2>Bienvenida a nuestro mundo Mi Amor 💗</h2>
+        <p>
+          Aquí guardamos nuestros recuerdos, nuestras sonrisas
+          y todos esos pequeños momentos que hacen especial
+          nuestra historia.
+        </p>
+        <a class="primary-link" href="#fotos">Ver nuestros recuerdos</a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="imagenes/snoopy-woodstock.png"
+          alt="Snoopy y Woodstock"
+          onerror="this.style.display='none';"
+        >
+      </div>
+      <span class="decor decor-one">♡</span>
+      <span class="decor decor-two">✿</span>
+    </section>
+
+    <nav class="menu">
+      <a href="#cartas">Cartas 💌</a>
+      <a href="#fotos">Fotos 📸</a>
+      <a href="#contador">Nuestro tiempo ⏳</a>
+      <a href="#sorpresas">Sorpresa 🎁</a>
+      <a href="#musica">Música 🎵</a>
+    </nav>
+
+    <section id="cartas" class="section">
+      <p class="eyebrow">PALABRAS BONITAS</p>
+      <h2>Cartitas especiales 💌</h2>
+      <div class="card letter-card">
+        <div class="letter-icon">💌</div>
+        <h3>Un mensaje para ti</h3>
+        <p id="carta">Tengo algo especial que decirte...</p>
+        <button id="letterButton">Abrir carta</button>
+      </div>
+    </section>
+
+    <section id="fotos" class="section">
+      <p class="eyebrow">MOMENTOS PARA RECORDAR</p>
+      <h2>Nuestro álbum 📸</h2>
+      <p class="section-description">
+        Cada fotografía guarda un recuerdo especial.
+      </p>
+      <div class="gallery">
+        <img src="imagenes/foto1.jpg" alt="Recuerdo 1">
+        <img src="imagenes/foto2.jpg" alt="Recuerdo 2">
+        <img src="imagenes/foto3.jpg" alt="Recuerdo 3">
+        <img src="imagenes/foto4.jpg" alt="Recuerdo 4">
+        <img src="imagenes/foto5.jpg" alt="Recuerdo 5">
+        <img src="imagenes/foto6.jpg" alt="Recuerdo 6">
+        <img src="imagenes/foto7.jpg" alt="Recuerdo 7">
+        <img src="imagenes/foto8.jpg" alt="Recuerdo 8">
+        <img src="imagenes/foto9.jpg" alt="Recuerdo 9">
+      </div>
+    </section>
+
+    <section id="contador" class="section">
+      <p class="eyebrow">CADA DÍA CUENTA</p>
+      <h2>Nuestro tiempo juntos ⏳</h2>
+      <div class="card counter-card">
+        <p>Desde el 21 de noviembre de 2026 ❤️</p>
+        <div id="tiempo" class="counter">Calculando...</div>
+      </div>
+    </section>
+
+    <section id="sorpresas" class="section">
+      <p class="eyebrow">ALGO BONITO TE ESPERA</p>
+      <h2>Una pequeña sorpresa 🎁</h2>
+      <div class="card">
+        <div class="gift">🎀</div>
+        <p>Hay un mensaje escondido para ti.</p>
+        <button id="surpriseButton">Descubrir sorpresa 💝</button>
+        <p id="mensaje-sorpresa" class="result"></p>
+      </div>
+    </section>
+
+    <section id="musica" class="section">
+      <p class="eyebrow">NUESTRA CANCIÓN</p>
+      <h2>🤍</h2>
+      <div class="card music-card">
+        <div class="music-icon">♫</div>
+        <h3>Amarte a la antigua</h3>
+        <p>Eslabon Armado</p>
+        <audio controls preload="metadata">
+          <source src="imagenes/musica.mp3" type="audio/mpeg">
+          Tu navegador no puede reproducir este audio.
+        </audio>
+        <small>La musica mas linda del mundo 🤍</small>
+      </div>
+    </section>
+
+    <footer>
+      <p>Hecho con cariño de Alexander para Helencita ❤️</p>
+      <p>Snoopy y Fifi acompañan nuestra historia 🐶🐤</p>
+    </footer>
+  </main>
+
+</body>
+</html>

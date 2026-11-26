@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // CONTRASEÑA
-  const CONTRASENA = "Helen2026";
+  const CONTRASENA = "Snoopy21";
 
   const login = document.getElementById("login");
   const contenido = document.getElementById("contenido");
